@@ -1,0 +1,31 @@
+<% include ../partials/header %>
+
+    <div class="container text-center">
+        <header class="jumbotron">
+            <div class="container">
+                <h1>Explore Iceland</h1>
+                <p>View locations from all over the island</p>
+                <p>
+                    <a class="btn btn-info btn-large" href="/locations/new">Add New Location</a>
+                </p>
+            </div>
+        </header>
+        
+        <div class="row text-center" style="display:flex; flex-wrap:wrap;">
+            <% locations.forEach(function(location){ %>
+                <div class="col-md-3 col-sm-6">
+                    <div class="img-thumbnail">
+                        <img class="img-thumbnail" src="<%= location.image %>"> 
+                        <div class="caption">
+                            <h6><%= location.name %></h6>
+                        </div>
+                        <p>
+                            <a href="/locations/<%= location._id %>" class="btn btn-info">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            <% }); %>
+        </div>
+    </div>
+
+<% include ../partials/footer %>

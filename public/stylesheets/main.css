@@ -5,7 +5,7 @@
 }
 
 .card-header {
-    background-color: rgba(214, 214, 214, 0.84) !important;
+    background-color: rgba(214, 214, 214, 0.6) !important;
 }
 
 #delete-form {
@@ -27,7 +27,6 @@
 .jumbotron {
     color: white;
     background-color: rgba(214, 214, 214, 0.75);
-    height: 240px;
     
 }
 

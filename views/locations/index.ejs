@@ -4,6 +4,7 @@
         <header class="jumbotron">
             <div class="container">
                 <h1>Explore Iceland</h1>
+                <hr>
                 <p>View locations from all over the island</p>
                 <p>
                     <a class="btn btn-info btn-large" href="/locations/new">Add New Location</a>
@@ -11,13 +12,14 @@
             </div>
         </header>
     </div>
-        <div class="container d-flex flex-wrap align-content-between">
+        <div class="container d-flex flex-wrap align-content-between justify-content-around">
             <% locations.forEach(function(location){ %>
-                    <div class="card-deck col-md-3 col-sm-6">
+                    <div class="card-deck col-md-4 col-sm-6">
                         <div class="card mb-5"> 
                             <img class="card-img-top" src="<%= location.image %>"> 
                                 <div class="card-body">
                                     <h6 class="card-title"><%= location.name %></h6>
+                                    <hr>
                                     <a href="/locations/<%= location._id %>" class="btn btn-info">More Info</a>
                                 </div>
                         </div>

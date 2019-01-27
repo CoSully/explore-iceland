@@ -10,22 +10,19 @@
                 </p>
             </div>
         </header>
-        
-        <div class="row text-center" style="display:flex; flex-wrap:wrap;">
+    </div>
+        <div class="container d-flex flex-wrap align-content-between">
             <% locations.forEach(function(location){ %>
-                <div class="col-md-3 col-sm-6">
-                    <div class="img-thumbnail">
-                        <img class="img-thumbnail" src="<%= location.image %>"> 
-                        <div class="caption">
-                            <h6><%= location.name %></h6>
+                    <div class="card-deck col-md-3 col-sm-6">
+                        <div class="card mb-5"> 
+                            <img class="card-img-top" src="<%= location.image %>"> 
+                                <div class="card-body">
+                                    <h6 class="card-title"><%= location.name %></h6>
+                                    <a href="/locations/<%= location._id %>" class="btn btn-info">More Info</a>
+                                </div>
                         </div>
-                        <p>
-                            <a href="/locations/<%= location._id %>" class="btn btn-info">More Info</a>
-                        </p>
                     </div>
-                </div>
             <% }); %>
         </div>
-    </div>
 
 <% include ../partials/footer %>

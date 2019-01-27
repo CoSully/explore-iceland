@@ -16,8 +16,8 @@ var commentRoutes    = require("./routes/comments"),
     locationRoutes = require("./routes/locations"),
     indexRoutes       = require("./routes/index");
 
-//mongoose.connect("mongodb://localhost/iceland", { useNewUrlParser: true });
-mongoose.connect("mongodb://cosully:11Mrdanger23@ds213645.mlab.com:13645/iceland", { useNewUrlParser: true });
+mongoose.connect("mongodb://localhost/iceland", { useNewUrlParser: true });
+//mongoose.connect("mongodb://cosully:11Mrdanger23@ds213645.mlab.com:13645/iceland", { useNewUrlParser: true });
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");

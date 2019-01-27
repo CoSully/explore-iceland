@@ -1,11 +1,19 @@
 .img-thumbnail {
     width: 100%;
     padding: 0;
+    margin-bottom: 20px;
+    background-color: rgba(214, 214, 214, 0.84);
+}
+.card-body {
     background-color: rgba(214, 214, 214, 0.84);
 }
 
 .card-header {
     background-color: rgba(214, 214, 214, 0.6) !important;
+}
+
+.card-image-top {
+    max-height: 169px;
 }
 
 #delete-form {
